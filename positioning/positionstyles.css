@@ -2,153 +2,225 @@
 /* Activity 1 styles */
 .content1 {
   /* This is the parent of the activity 1 boxes. */
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 20px;
 }
 .red1 { 
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: red; 
+  grid-column: 1/3;
 
 } 
 .green1 {
-  width: 100px; 
-  height: 100px; 
+  width: 200px; 
+  height: 200px; 
   background-color: green; 
 
 } 
 .yellow1 {
-  width: 100px; 
-  height: 100px; 
+  width: 200px; 
+  height: 200px; 
   background-color: gold; 
 } 
 .blue1 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: blue; 
+  grid-column: 1/3;
 } 
 /* Activity 2 styles */ 
 .content2 {
   /* This is the parent of the activity 2 boxes. */
+  display: grid;
+  grid-template-columns: [first] 50px [line2] 50px [line3] 50px [line4] 50px [end];
+  grid-template-rows: [row1-start] 50px [row1-end] 50px [third-line] 50px [last-line];
 }
 .red2 {
   width: 100px; 
   height: 100px; 
   background-color: red; 
+  z-index: 0;
+  grid-column-start: first;
+  grid-column-end: first;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+  
 } 
 .green2 { 
   width: 100px; 
   height: 100px; 
   background-color: green; 
+  z-index: 1;  
+  grid-column-start: line2;
+  grid-column-end: line3;
+  grid-row-start: row1-end;
+  grid-row-end: third-line;
 } 
 .yellow2 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
+  z-index: 2;
+  grid-column-start: line3;
+  grid-column-end: line4;
+  grid-row-start: third-line;
+  grid-row-end: last-line;
+
 } 
 .blue2 {
   width: 100px; 
   height: 100px; 
   background-color: blue; 
+  z-index: 3;
+  grid-column-start: line4;
+  grid-column-end: end;
+  grid-row-start: last-line;
+  grid-row-end: end;
 } 
 /* Activity 3 styles */ 
 .content3 {
   /* This is the parent of the activity 3 boxes. */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .red3 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: red; 
+  grid-column: 1/3;
 } 
 .green3 {
-  width: 100px; 
-  height: 100px; 
+  width: 90%; 
+  height: 200px;
   background-color: green;
+  justify-self: start;
 } 
 .yellow3 {
-  width: 100px; 
-  height: 100px; 
+  width: 90%; 
+  height: 200px; 
   background-color: gold; 
+  justify-self: end;
 } 
 .blue3 {
-  width: 100px;
+  width: 100%;
   height: 100px; 
   background-color: blue; 
+  grid-column: 1/3;
 } 
 /* Activity 4 styles */ 
 .content4 {
   /* This is the parent of the activity 4 boxes. */
   height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .red4 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 100%; 
   background-color: red; 
+  grid-column: 1/2;
+  grid-row: 1/4;
+  justify-self: start;
+  
 } 
 .green4 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 100%px; 
   background-color: green; 
+
 } 
 .yellow4 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 100%; 
   background-color: gold; 
 } 
 .blue4 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 100%; 
   background-color: blue; 
 } 
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
   height: 400px;
+  /* float: left; */
 }
 .red5 { 
-  width: 100px; 
+  width: 100ps; 
   height: 100px; 
   background-color: red; 
 } 
 .green5 { 
-  width: 100px; 
-  height: 100px; 
+  width: 170px; 
+  height: 170px; 
+  z-index: 1;
   background-color: green; 
-
+  float: left;
 } 
 .yellow5 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 65%; 
+  z-index: 0;
   background-color: gold; 
 
 } 
 .blue5 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: blue; 
 } 
 /* Activity 6 styles */ 
 .content6 {
   /* This is the parent of the activity 6 boxes. */
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px 100px 100px 100px; */
+  grid-template-columns: [cLine1] 100px [cLine2] 100px [cLine3] 100px [cLine4] 100px [cLine5] 100px [cLine6] 100px [end];
+  grid-template-rows: [rLine1] 100px [rLine2] 100px [rLine3] 100px [rLine4] 100px [rLine5] 100px [rLine6]  100px [end];
+  /* grid-template-rows: 1fr 1fr 1fr; */
 }
 .red6 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 100%; 
   background-color: red; 
+  grid-column-start: cLine1;
+  grid-column-end: cLine5;
+  grid-row-start: rLine1;
+  grid-row-end: rLine3;
+  z-index: 0;
 } 
 .green6 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 100%; 
   background-color: green; 
+  grid-column-start: cLine1;
+  grid-column-end: cLine3;
+  grid-row-start: rLine5;
+  grid-row-end: end;
+  z-index: 1;
 } 
 .yellow6 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 100%; 
   background-color: gold; 
+  grid-column-start: cLine5;
+  grid-column-end: end;
+  grid-row-start: rLine3;
+  grid-row-end: end;
+  z-index: 1;
 } 
 .blue6 {
-  width: 100px; 
-  height: 100px; 
+  width: 10%0; 
+  height: 100%; 
   background-color: blue; 
+  grid-column-start: cLine2;
+  grid-column-end: cLine6;
+  grid-row-start: rLine2;
+  grid-row-end: rLine6;
+  z-index: 0;
 } 
 
 
