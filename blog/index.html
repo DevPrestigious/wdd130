@@ -8,25 +8,35 @@
    <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 
-<header>
-   <img src="./images/logo.png" alt="logo" id="logo">
-<nav>
-  <a href="https://prestigious.dev">Portfolio</a>|     
-  <a href="Contact">Contact</a>|
-  <a href="./site-plan.html">Site Plan</a>
-</nav>
-</header>
 <body>
-<div id = 'info'>Click the buttons below to see my travels in their locations!</div>
-<img src="./images/europe.svg" alt="europe">
-<input type=button onClick="parent.location='./pages/russia.html'"
- value='Russia'>
-<input type=button onClick="parent.location='./pages/uk.html'"
- value='United Kingdom'>
-</body>
+   <div id="content">
+      <header>
+         <a id="logo_link" href="./index.html">
+            <img class="logo" src="./images/logo.png" alt="logo">
+         </a>
+         <nav>
+            <a href="https://prestigious.dev" target="_blank">Portfolio</a>     
+            <a href="./pages/contact.html">Contact</a>
+            <a href="./site-plan.html">Site Plan</a>
+         </nav>
+      </header>
 
-<footer>
-<p>Alexander Dohms - WDD130</p>
-</footer>
+      <h3>Click the buttons below to see my travels in their locations</h3>
+      <div class="container">
+         <img src="./images/europe.svg" alt="europe">
+         <input class = "rusbtn" type=button onClick="parent.location='./pages/russia.html'"
+            value='Russia'>
+         <input class = "ukbtn" type=button onClick="parent.location='./pages/uk.html'"
+            value='United Kingdom'>
+       </div>
+      
+      
+      
+
+      <footer>
+         <p>Alexander Dohms - WDD130</p>
+      </footer>
+   </div>   
+</body>
 
 </html>
