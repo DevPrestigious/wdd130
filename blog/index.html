@@ -4,24 +4,35 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Personal Blog</title>
+   <title>Sanya's Blog</title>
    <link type="text/css" rel="stylesheet" href="styles/style.css">
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
    <div id="content">
-      <header>
+      <header>         
          <a id="logo_link" href="./index.html">
+               <img class="logo" src="./images/logo.png" alt="logo">
+         </a>
+         <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./pages/russia.html">Russia</a>
+            <a href="./pages/uk.html">England</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i>
+               </a>
+            </div>
+         <!-- <a id="logo_link" href="./index.html">
             <img class="logo" src="./images/logo.png" alt="logo">
          </a>
          <nav>
-            <a href="https://prestigious.dev" target="_blank">Portfolio</a>     
-            <a href="./pages/contact.html">Contact</a>
-            <a href="./site-plan.html">Site Plan</a>
-         </nav>
+                
+            
+         </nav> -->
       </header>
 
-      <h3>Click the buttons below to see my travels in their locations</h3>
       <div class="container">
          <img src="./images/europe.svg" alt="europe">
          <input class = "rusbtn" type=button onClick="parent.location='./pages/russia.html'"
@@ -30,13 +41,20 @@
             value='United Kingdom'>
        </div>
       
-      
+       <h3>Purpose</h3>
+       <p style="font-size: 1.25em;">This website was created with the idea of sharing you locations of places that I've been. A virtual pin board so to speak. With the added benefit that I can add pictures and a story to go along with the pictures. So please, take some time to look at the map, and clickable button above to see more information in that area. I hope you this as much as I did creating it.</p>
       
 
       <footer>
-         <p>Alexander Dohms - WDD130</p>
+         <p>Alexander Dohms - WDD130 | Sanya'sBlog© | </p>
+         <nav>
+            <a href="https://prestigious.dev" target="_blank">Portfolio</a> 
+            <a href="./pages/contact.html">Contact</a>
+            <a href="./site-plan.html">Site Plan</a>
+         </nav>
       </footer>
    </div>   
+   <script src="javascript/main.js"></script>
 </body>
 
 </html>

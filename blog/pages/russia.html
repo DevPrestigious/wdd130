@@ -6,21 +6,25 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- We will uncomment the css when we are ready for the next part in the project. -->
    <link type="text/css" rel="stylesheet" href="../styles/style.css">
-   <title>Personal Blog</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Sanya's Blog</title>
+   
 </head>
 
 <body>
-
    <header>
-      <a href="../index.html">
-      <img src="../images/logo.png" alt="logo" id="logo">
+      <a id="logo_link" href="./index.html">
+         <img class="logo" src="../images/logo.png" alt="logo">
       </a>
-      <nav>
+      <div class="topnav" id="myTopnav">
          <a href="../index.html">Home</a>
-         <a href="https://prestigious.dev">Portfolio</a>    
-         <a href="Contact">Contact</a>
-      </nav>
-      </header>
+         <a href="./russia.html" class="active">Russia</a>
+         <a href="./uk.html">England</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+      </div>
+   </header>
 
    <img src="../images/vladivostok.JPG" 
       width="500"
@@ -41,6 +45,7 @@
    <footer>
       <p>Alexander Dohms - WDD130</p>
    </footer>
+   <script src="../javascript/main.js"></script>
 </body>
 
 </html>
