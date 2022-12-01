@@ -60,6 +60,7 @@ body {
    height: auto;
  }
 
+/* This here is for the Russian Button.  */
 .container .rusbtn {
    position: absolute;
    top: 40%;
@@ -77,6 +78,7 @@ body {
    text-align: center;
  }
 
+ /* This here is for the UK button. */
  .container .ukbtn {
    position: absolute;
    top: 50%;
@@ -108,6 +110,17 @@ p {
    font-family: var(--paragraph-font);
    color: var(--paragraph-color-on-color);
    padding: 1em;
+}
+
+
+header {
+   background-color: var(--nav-background-color); 
+   text-decoration: none;
+   padding: 25px 50px;  
+   display: flex; 
+   justify-content:  space-around;
+   grid-template-columns: 200px auto;
+   align-items: center; 
 }
 
 /* Add a black background color to the top navigation */
@@ -145,6 +158,7 @@ p {
    display: none;
  }
 
+ 
 /* nav {
    background-color: var(--nav-background-color);
    line-height: 3em;
@@ -167,7 +181,7 @@ nav a:hover {
 } */
 
 
-#logo_link {
+/* #logo_link {
    padding-top: 0px;
    justify-self: center;
    align-self: center;
@@ -175,14 +189,15 @@ nav a:hover {
    height: relative;
    position: relative;
    size: 1px;
-}
+} */
 
-.logo {
+/* .logo {
    width: 100px;
    position: relative;
-}
+} */
 
-header {
+
+footer {
    background-color: var(--nav-background-color); 
    text-decoration: none;
    padding: 25px 50px;  
@@ -191,6 +206,52 @@ header {
    grid-template-columns: 200px auto;
    align-items: center; 
 }
+
+/* footer a {
+   float: left;
+   display: block;
+   color: var(--nav-link-color);
+   font-family: var(--heading-font);
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 1em;
+} */
+
+/* footer a:hover {
+   background-color: var(--primary-color);
+   color: var(--accent2-color);
+ } */
+
+.bottomnav a {
+   float: left;
+   display: block;
+   color: var(--nav-link-color);
+   font-family: var(--heading-font);
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 1.2em;
+ }
+
+ /* Change the color of links on hover */
+ .bottomnav a:hover {
+   background-color: var(--primary-color);
+   color: var(--accent2-color);
+ }
+
+ /* Add an active class to highlight the current page */
+.bottomnav a.active {
+   background-color: var(--accent3-color);
+   color: var(--accent1-color);
+ }
+
+ /* Hide the link that should open and close the topnav on small screens */
+.bottomnav .icon {
+   display: none;
+ }
+
+
 
 .background {
    color: var(--accent3-color);
@@ -218,4 +279,26 @@ header {
      display: block;
      text-align: left;
    }
+/* Start for bottom nav uncomment this if I want to do it eventually. It should be good.*/
+   /* .bottomnav a:not(:first-child) {display: none;}
+   .bottomnav a.icon {
+     float: right;
+     display: block;
+   }
+ } */
+ 
+ /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+ /* @media screen and (max-width: 600px) {
+   .bottomnav.responsive {position: relative;}
+   .bottomnav.responsive a.icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+   }
+   .bottomnav.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+   } */
+
  }
