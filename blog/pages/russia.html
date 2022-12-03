@@ -20,35 +20,49 @@
          <a href="../index.html">Home</a>
          <a href="./russia.html" class="active">Russia</a>
          <a href="./uk.html">England</a>
+         <a href="./contact.html">Contact</a>
          <a href="javascript:void(0);" class="icon" onclick="myTopNavFunction()">
          <i class="fa fa-bars"></i>
          </a>
       </div>
    </header>
-
-   <img src="../images/vladivostok.JPG" 
-      width="500"
-      height="400"
-      alt="mail"
-   >
-   <p>One of my favorite travel opportunities. I traveled all the way to "the end of Russia" also known as Vladivostok. Here you are closer to the Californian coast than Moscow! On the far eastern side of Russia there are many resemblances to Asia. This is perhaps due to its history of being a Chinese and Japanese owned province. During summers you can find many people at the beach enjoying the sun and water. September 1, 2022</p>
-
-   <img src="../images/moscow.jpeg" 
-      width="500"
-      height="400"   
-      alt="europe"
-   >
-   <p>This is the famous St. Basils Cathedral in Moscow’s Red Square. Some Americans have joked to me and said that it is the ice cream church, for the resemblance of ice cream cones on the top. To the left is the Kremlin. And to the right is GUM, a very popular mall.
-      September 1 2022
-   </p>
-
+   <section class="sec1"> 
+      <div class="leftcol">
+         <img class="pics" src="../images/vladivostok.JPG" 
+            width="500"
+            height="400"
+            alt="mail"
+         >
+      </div>
+      <div class="rightcol">
+         <p>One of my favorite travel opportunities. I traveled all the way to "the end of Russia" also known as Vladivostok. Here you are closer to the Californian coast than Moscow! On the far eastern side of Russia there are many resemblances to Asia. This is perhaps due to its history of being a Chinese and Japanese owned province. During summers you can find many people at the beach enjoying the sun and water. 
+            September 1, 2022</p>
+      </div>
+   </section> 
+   <section class="sec2">
+      <div class="leftcol">
+         <img class="pics" src="../images/moscow.jpeg" 
+              
+            alt="europe"
+         >
+      </div>
+      <div class="rightcol">
+         <p>This is the famous St. Basils Cathedral in Moscow’s Red Square. Some Americans have joked to me and said that it is the ice cream church, for the resemblance of ice cream cones on the top. To the left is the Kremlin. And to the right is GUM, a very popular mall.
+            August 1, 2022
+         </p>
+      </div>   
+   </section>
    <footer>
-      <div id="copyright"></div>    
-         <nav>
-            <a href="https://prestigious.dev" target="_blank">Portfolio</a> 
-            <a href="./contact.html">Contact</a>
-            <a href="../site-plan.html">Site Plan</a>
-         </nav>
+      <div id="copyright"></div>
+            <div class="bottomnav" id="myBottomnav">
+               <a href="https://prestigious.dev" target="_blank">Portfolio</a> 
+               <a href="linkedin.com/in/dohmsalex">LinkedIn</a>
+               <a href="./site-plan.html">Site Plan</a>
+               <!-- Perhaps I'll want to use this, uncomment the last lines in CSS and it'll work. -->
+               <a href="javascript:void(0);" class="icon" onclick="myBottomNavFunction()">
+                  <i class="fa fa-bars"></i>
+                  </a>
+            </div>
    </footer>
    <script src="../javascript/main.js"></script>
 </body>

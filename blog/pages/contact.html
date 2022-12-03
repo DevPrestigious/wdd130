@@ -6,10 +6,148 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- We will uncomment the css when we are ready for the next part in the project. -->
    <link type="text/css" rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <title>Contact</title>
+   <style>
+   form {
+      /* Center the form on the page */
+      margin: 0 auto;
+      width: 400px;
+      /* Form outline */
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
+      }
+    
+      ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+    
+      form li + li {
+      margin-top: 1em;
+      }
+    
+      label {
+      /* Uniform size & alignment */
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+      }
+    
+      input,
+      textarea {
+      /* To make sure that all text fields have the same font settings
+         By default, textareas have a monospace font */
+      font: 1em sans-serif;
+    
+      /* Uniform text field size */
+      width: 300px;
+      box-sizing: border-box;
+    
+      /* Match form field borders */
+      border: 1px solid #999;
+      }
+    
+      input:focus,
+      textarea:focus {
+      /* Additional highlight for focused elements */
+      border-color: #000;
+      }
+    
+      textarea {
+      /* Align multiline text fields with their labels */
+      vertical-align: top;
+    
+      /* Provide space to type some text */
+      height: 5em;
+      }
+    
+      .button {
+      /* Align buttons with the text fields */
+      padding-left: 90px; /* same size as the label elements */
+      }
+    
+      button {
+      /* This extra margin represent roughly the same space as the space
+         between the labels and their text fields */
+      margin-left: 0.5em;
+      }
+      #feedback {
+      background-color: antiquewhite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .5em;
+      /* make this element invisible until we are ready for it */
+      display: none;      
+      }
+      .moveDown {
+      margin-top: 3em;
+      }
+    
+     @media screen and (max-width: 1100px) {
+      .leftcol, .rightcol {
+        max-width: 100%;
+        flex: 1 0 15em;
+        padding: 10px;
+      }
+      .pics {
+        min-width: 100%;
+      }
+     }
+     </style>
 </head>
 
 <body>
-   <p>site under constuction</p>
-   <a href="../index.html">Home</a>
+   <header>
+      <a id="logo_link" href="../index.html">
+         <img class="logo" src="../images/logo.png" alt="logo">
+      </a>
+      <div class="topnav" id="myTopnav">
+         <a href="../index.html">Home</a>
+         <a href="./russia.html">Russia</a>
+         <a href="./uk.html">England</a>
+         <a href="./pages/contact.html" class="active">Contact</a>
+         <a href="javascript:void(0);" class="icon" onclick="myTopNavFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+      </div>
+   </header>
+
+   <!-- modify this form HTML and place wherever you want your form -->
+<form
+action="https://formspree.io/f/moqrebjr"
+method="POST"
+>
+   <ul>
+      <li>
+         <label for="name">Your email:</label>
+         <input type="email" name="email">
+      </li>
+      <li>
+         <label for="msg">Your message:</label>
+         <textarea name="message"></textarea>
+      </li>
+      <li class="button">
+         <!-- your other form fields go here -->
+         <button type="submit">Send</button>
+         </li>
+      </ul>
+</form>
+<footer>
+   <div id="copyright"></div>
+         <div class="bottomnav" id="myBottomnav">
+            <a href="https://prestigious.dev" target="_blank">Portfolio</a> 
+            <a href="linkedin.com/in/dohmsalex">LinkedIn</a>
+            <a href="./site-plan.html">Site Plan</a>
+            <!-- Perhaps I'll want to use this, uncomment the last lines in CSS and it'll work. -->
+            <a href="javascript:void(0);" class="icon" onclick="myBottomNavFunction()">
+               <i class="fa fa-bars"></i>
+               </a>
+         </div>
+</footer>
+<script src="../javascript/main.js"></script>
 </body>

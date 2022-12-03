@@ -36,6 +36,24 @@ body {
    background-color: var(--accent3-color);
  }
 
+.leftcol, .rightcol {
+  max-width: 48%;
+  flex: 1 0 15em;
+  padding: 10px;
+}
+
+.sec1, .sec2 {
+  display: flex; 
+  flex-flow:  row wrap;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px;
+}
+
+.pics{
+  /* margin: 10px 100px 50px 0px; */
+  width: 100%;
+}
 
  h1, h2, h3, h4, h5, h6 {  
    font-family: var(--heading-font); 
@@ -155,31 +173,8 @@ header {
 
  /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-   display: none;
+  display: none;
  }
-
- 
-/* nav {
-   background-color: var(--nav-background-color);
-   line-height: 3em;
-   text-align: center;
-   font-size: 1.2em;
-}
-nav a {
-   font-family: var(--heading-font);
-   padding:1em;
-   min-width: 120px;
-   text-decoration: none;
-   padding: 10px;
-}
-nav a:link, nav a:visited {
-   color: var(--nav-link-color);
-}
-nav a:hover {
-   color: var(--nav-hover-link-color);
-   background-color: var(--nav-hover-background-color);
-} */
-
 
 /* #logo_link {
    padding-top: 0px;
@@ -257,15 +252,23 @@ footer {
    color: var(--accent3-color);
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 650 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 650px) {
-   .topnav a:not(:first-child) {display: none;}
-   .topnav a.icon {
-     float: right;
-     display: block;
-   }
- }
- 
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .leftcol, .rightcol {
+    max-width: 100%;
+    flex: 1 0 15em;
+    padding: 10px;
+  }
+  .pics {
+    min-width: 100%;
+  }
+}
+
  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
  @media screen and (max-width: 600px) {
    .topnav.responsive {position: relative;}
@@ -279,6 +282,18 @@ footer {
      display: block;
      text-align: left;
    }
+
+
+
+  .leftcol, .rightcol {
+  max-width: 100%;
+  flex: 1 0 15em;
+  padding: 10px;
+}
+
+.pics {
+  max-width: 100%;
+}
 /* Start for bottom nav uncomment this if I want to do it eventually. It should be good.*/
    /* .bottomnav a:not(:first-child) {display: none;}
    .bottomnav a.icon {
