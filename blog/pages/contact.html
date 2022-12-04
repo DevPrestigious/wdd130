@@ -13,9 +13,12 @@
          /* Center the form on the page */
          margin: 0 auto;
          width: 400px;
+         /* Form Text */
+         color: var(--primary-color);
+         font-family: var(--paragraph-font);
          /* Form outline */
          padding: 1em;
-         border: 1px solid #ccc;
+         border: 1px solid var(--accent2-color);
          border-radius: 1em;
          }
        
@@ -41,6 +44,7 @@
          /* To make sure that all text fields have the same font settings
             By default, textareas have a monospace font */
          font: 1em sans-serif;
+         font-family: var(--paragraph-font);
        
          /* Uniform text field size */
          width: 300px;
@@ -66,13 +70,14 @@
        
          .button {
          /* Align buttons with the text fields */
-         padding-left: 90px; /* same size as the label elements */
+         padding-left: 343.5px; /* same size as the label elements */
          }
        
          button {
          /* This extra margin represent roughly the same space as the space
             between the labels and their text fields */
          margin-left: 0.5em;
+         font-family: var(--paragraph-font);
          }
          #feedback {
          background-color: antiquewhite;
