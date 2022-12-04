@@ -9,96 +9,96 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <title>Contact</title>
    <style>
-   form {
-      /* Center the form on the page */
-      margin: 0 auto;
-      width: 400px;
-      /* Form outline */
-      padding: 1em;
-      border: 1px solid #ccc;
-      border-radius: 1em;
-      }
-    
-      ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      }
-    
-      form li + li {
-      margin-top: 1em;
-      }
-    
-      label {
-      /* Uniform size & alignment */
-      display: inline-block;
-      width: 90px;
-      text-align: right;
-      }
-    
-      input,
-      textarea {
-      /* To make sure that all text fields have the same font settings
-         By default, textareas have a monospace font */
-      font: 1em sans-serif;
-    
-      /* Uniform text field size */
-      width: 300px;
-      box-sizing: border-box;
-    
-      /* Match form field borders */
-      border: 1px solid #999;
-      }
-    
-      input:focus,
-      textarea:focus {
-      /* Additional highlight for focused elements */
-      border-color: #000;
-      }
-    
-      textarea {
-      /* Align multiline text fields with their labels */
-      vertical-align: top;
-    
-      /* Provide space to type some text */
-      height: 5em;
-      }
-    
-      .button {
-      /* Align buttons with the text fields */
-      padding-left: 90px; /* same size as the label elements */
-      }
-    
-      button {
-      /* This extra margin represent roughly the same space as the space
-         between the labels and their text fields */
-      margin-left: 0.5em;
-      }
-      #feedback {
-      background-color: antiquewhite;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: .5em;
-      /* make this element invisible until we are ready for it */
-      display: none;      
-      }
-      .moveDown {
-      margin-top: 3em;
-      }
-    
-     @media screen and (max-width: 1100px) {
-      .leftcol, .rightcol {
-        max-width: 100%;
-        flex: 1 0 15em;
-        padding: 10px;
-      }
-      .pics {
-        min-width: 100%;
-      }
-     }
-     </style>
+      form {
+         /* Center the form on the page */
+         margin: 0 auto;
+         width: 400px;
+         /* Form outline */
+         padding: 1em;
+         border: 1px solid #ccc;
+         border-radius: 1em;
+         }
+       
+         ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         }
+       
+         form li + li {
+         margin-top: 1em;
+         }
+       
+         label {
+         /* Uniform size & alignment */
+         display: inline-block;
+         width: 90px;
+         text-align: right;
+         }
+       
+         input,
+         textarea {
+         /* To make sure that all text fields have the same font settings
+            By default, textareas have a monospace font */
+         font: 1em sans-serif;
+       
+         /* Uniform text field size */
+         width: 300px;
+         box-sizing: border-box;
+       
+         /* Match form field borders */
+         border: 1px solid #999;
+         }
+       
+         input:focus,
+         textarea:focus {
+         /* Additional highlight for focused elements */
+         border-color: #000;
+         }
+       
+         textarea {
+         /* Align multiline text fields with their labels */
+         vertical-align: top;
+       
+         /* Provide space to type some text */
+         height: 5em;
+         }
+       
+         .button {
+         /* Align buttons with the text fields */
+         padding-left: 90px; /* same size as the label elements */
+         }
+       
+         button {
+         /* This extra margin represent roughly the same space as the space
+            between the labels and their text fields */
+         margin-left: 0.5em;
+         }
+         #feedback {
+         background-color: antiquewhite;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         padding: .5em;
+         /* make this element invisible until we are ready for it */
+         display: none;      
+         }
+         .moveDown {
+         margin-top: 3em;
+         }
+       
+        @media screen and (max-width: 1100px) {
+         .leftcol, .rightcol {
+           max-width: 100%;
+           flex: 1 0 15em;
+           padding: 10px;
+         }
+         .pics {
+           min-width: 100%;
+         }
+        }
+        </style>
 </head>
 
 <body>
@@ -117,10 +117,17 @@
       </div>
    </header>
 
-   <!-- modify this form HTML and place wherever you want your form -->
+<!-- Literally no Idea why, but formspree will only work while there are two forms on the site. I couldn't
+figure it out, so I just kept one form and set the style to hidden. -->
 <form
-action="https://formspree.io/f/moqrebjr"
-method="POST"
+  action="https://formspree.io/f/moqrebjr"
+  method="POST"
+  style="display :none"
+>
+</form>
+<form
+  action="https://formspree.io/f/moqrebjr"
+  method="POST"
 >
    <ul>
       <li>
